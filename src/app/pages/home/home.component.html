@@ -1,0 +1,48 @@
+<div class="banner">
+  <div class="connect">
+    <h1 class="mb-5">Your Paradice</h1>
+    <a routerLink="menu">Order Here<i class="bi bi-caret-left"></i></a>
+  </div>
+</div>
+<!-- step -->
+<div class="container mt-5 mb-5">
+  <h1 class="text-center">Select Your <span style="color: var(--crank-color)">Arabic Food</span></h1>
+  <div class="row mt-5">
+    <!-- one -->
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+        <h1>1</h1>
+        <p>Make a Wish</p>
+      </div>
+    </div>
+    <!-- two -->
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+        <h1>2</h1>
+        <p>Fill In Your Details</p>
+      </div>
+    </div>
+    <!-- three -->
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+        <h1>3</h1>
+        <p>Wish Ready To Be Delivered</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- productbox -->
+<div class="container mb-4 mb-4">
+  <h1 class="text-center">Customers <span style="color: var(--crank-color)">Favourite Meals</span></h1>
+  <div class="row">
+    <div class="col-lg-3 mt-3" *ngFor="let pd of productData">
+        <div class="productbox">
+          <img src="{{pd.foodImg}}">
+          <h1>{{pd.foodName}}</h1>
+          <p>{{pd.foodPrice | currency:"EUR"}}</p>
+        </div>
+    </div>
+  </div>
+  <a routerLink="menu" class="viewmorebtn">View More<i class="bi bi-caret-left"></i></a>
+</div>

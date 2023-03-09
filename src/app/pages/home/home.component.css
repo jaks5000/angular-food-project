@@ -1,0 +1,86 @@
+.banner {
+  background-image: url("../../../assets/img/banner-ta3meya.jpg");
+  height: 600px;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.connect {
+  top: 30%;
+  left: 20%;
+  position: absolute;
+}
+.connect h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+.connect a {
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--primary-color);
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+.connect a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.stepBox {
+  background-color: #000;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.stepBox h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--crank-color);
+}
+.stepBox p {
+  color: #fff;
+  font-style: italic;
+  font-size: 20px;
+}
+.arabic-food {
+  color: var(--crank-color);
+}
+
+.productbox
+{
+  padding: 10px 5px;
+}
+
+.productbox img
+{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.productbox h1
+{
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.viewmorebtn
+{
+  text-decoration: none;
+  background-color: #000;
+  color: var(--crank-color);
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width:600px)
+{
+  .banner
+  {
+    height: 700px;
+  }
+}

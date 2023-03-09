@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+*
+{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: rgb(97, 102, 107); */
+}
+
+:root
+{
+    --primary-color:#000000;
+    --secondary-color:#b1b1b1;
+    --crank-color:rgb(187, 138, 32);
+}
+/* ------------My Own Edited Font------------ */
+@font-face {
+  font-family: quando;
+  src: url(../../foodcare/src/assets/font/Quando-Regular.ttf) format("opentype");
+}
+
+body
+{
+    height: 100vh;
+    font-family: quando, Arial, sans-serif;
+}
+/* ------------My Own Edited Font------------ */
+
+/*                                      This is My Own Edit === Height was making a problem in phone display mode from the ""Top Right Bottom"" bar*/
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.1em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}

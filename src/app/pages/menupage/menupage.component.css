@@ -1,0 +1,26 @@
+form
+{
+  margin-top: 10%;
+  width: 50%;
+}
+
+img
+{
+  border-radius: 6px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.row
+{
+  margin: auto 50px auto 50px;
+}
+
+@media screen and (max-width:600px)
+{
+  form
+  {
+    width:100%;
+  }
+}
+
